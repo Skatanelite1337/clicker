@@ -38,7 +38,7 @@ document.getElementById("click").onclick = function() {
     clicks = parseFloat(clicks) + parseFloat(click_increment);
     update_total_clicks();
 };
-//buy clicks ps
+//klick per sekund
 document.getElementById("buy_click").onclick = function() {
     if (!buy_something(cost, this)) return;
     auto_clicks++;
@@ -51,7 +51,7 @@ document.getElementById("buy_click").onclick = function() {
     var e2 = document.getElementById("autoclicker_level");
     e2.innerHTML = 'lvl  ' + auto_clicks;
 };
-//lower time between autoclicks
+//lägre tid mellan automatiska klicks
 document.getElementById("upgrade_speed").onclick = function() {
     var upgrade_cost = (Math.pow(3, upgrade_speed)) * 100;
     if (!buy_something(upgrade_cost, this)) return;
